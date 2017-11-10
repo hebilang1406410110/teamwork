@@ -6,9 +6,9 @@
 
 
 body{
-	min-height:100%;
 	margin:0;
 	padding:0;
+	width: 1903px;
 ;
 	
 }
@@ -16,8 +16,7 @@ body{
 header {
 	background-color:rgba(0,102,52,1);
 	padding: 24px;
-	position: fixed;
-	width: 1900px;
+	width: 1855px;
 	height: 30px;
 	clear: both;
 }
@@ -39,7 +38,7 @@ ul li {
 	border-right: none;
 	overflow: hidden;
 	float: left;
-	margin: -10px 0 0 520px;
+	margin: -10px 0 0 525px;
 }
 
 .nav ul li {
@@ -90,25 +89,38 @@ ul li {
 
 
 
-header p {
+header .zh {
 	font-size:1.5em;
-	width:95%;
+	width:97%;
 	text-align:right;
+	cursor: pointer;
+	color: white;
 }
 
 
 
 main {
-	
-
 }
 
 .main1 {
 	margin: 0;
 	padding: 0;
 	background-color: black;
-	height: 900px;
+	height: 1000px;
 }
+
+.main1 h1{
+	margin: 0;
+	padding-top: 400px;
+	color: black;
+	text-align: center;
+	font-size: 8em;
+	transition: color 2s;
+}
+.main1 h1:hover {
+	color: white;
+}
+
 
 
 
@@ -156,8 +168,12 @@ main {
 	height: 700px;
 	float: left; 
 	background-color:rgba(0,102,52,1);
+	display: block;
 }
 
+.z2:hover img {
+	display: none;
+}
 .z3 {
 	margin: 70px 12px 0 12px;
 	padding: 0;
@@ -165,6 +181,11 @@ main {
 	height: 700px;
 	float: left; 
 	background-color:rgba(0,102,52,1);
+	display: block;
+}
+
+.z3:hover img {
+	display: none;
 }
 
 .z4 {
@@ -174,7 +195,13 @@ main {
 	height: 700px;
 	float: left; 
 	background-color:rgba(0,102,52,1);
+	display: block;
 }
+
+.z4:hover img {
+	display: none;
+}
+
 
 .abc {
 	margin:0;
@@ -218,8 +245,6 @@ footer {
     text-align: center;
     padding: 14px;
     bottom:0;
-    
-
 }
 
 a {
@@ -229,5 +254,92 @@ a {
 a:hover { 
 	color:red ; text-decoration:underline;
 }
+
+
+
+
+
+
+
+#screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	z-index: 9998;
+	opacity: 0.3;
+	display: none;
+	position: fixed;
+}
+
+
+
+#login {
+	width: 300px;
+	height: 450px;
+	border: none;
+	background: #fff;
+	position: fixed;
+	z-index: 9999;
+	display: none;
+}
+
+#login h2{
+	height: 130px;
+	text-align: center;
+	letter-spacing: 2px;
+	background: url(../img/2.png);
+	margin: 0;
+	padding:0;
+	border:none;
+	margin-bottom: 45px;
+}
+
+#login .guanbi {
+	float: right;
+	font-size: 14px;
+	position: relative;
+	top: 2px;
+	right: 4px;
+	cursor: pointer;
+	color: white;
+}
+
+#login div.user,#login div.pass {
+	text-align: center;
+	padding: 5px 0;
+	margin-bottom: 10px;
+}
+
+
+
+#login input.text {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #ccc;
+	background: #ccc;
+}
+
+#login .button {
+	text-align: center;
+	padding: 15px 0;
+}
+
+#login input.submit {
+	width: 100px;
+	height: 50px;
+	background: url(../img/3.png) no-repeat;
+	cursor: pointer;
+	border: none;
+	margin-top: 10px;
+}
+
+#login .other {
+	text-align: center;
+	font-size: 14px;
+	color: #ccc;
+}
+
+
 
 
